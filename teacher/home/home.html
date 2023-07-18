@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Student Management - Home</title>
+    <link rel="stylesheet" href="/teacher/home/style.css">
+</head>
+<body>
+    <nav class="navbar">
+     <div class="Site-name">In-Memory</div>
+     <div class="logo"><a href="" target="_blank"><img src="" length="50px" height="50px"></a></div>
+     <ul class="nav-links">
+       <input type="checkbox" id="checkbox_toggle" />
+       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+       <div class="menu">
+         <li><a  href="http://in-memory.cloud/" target="_blank">Home</a></li>
+         <li class="opt">
+           <a href="#">Services</a>
+         </li>
+         <li><a href="#">Contact</a></li>
+         <li><a href="/">About</a></li>
+         <li><a href="#">Log out</a></li>
+       </div>
+     </ul>
+   </nav>
+    <section>
+        <div>
+            <div class="row">
+                <div class="container col-12 services-container" style="margin-top:0px;">
+                    <div class="col-md-4">
+                        <div class="service-box text-center color3">
+                            <center>
+                                <i class="insrt"></i>
+                                <h3 class="mb-1 mt-0">Insert Student Data</h3>
+                                <p class="mb-0">Click on the below button to insert new students records.</br><font color="red"><b>Note:</b></font>Here, you can only insert new student's record </p>
+                                <a href="/teacher/home/insert_student_data/home.html" target="_blank" class="text-decoration-none"><button class="custom-btn btn-1">Insert Data</button></a>
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="service-box text-center color1">
+                            <center>
+                            <i class="shw"></i>
+                            <h3 class="mb-1 mt-0" style="color: black;">Show Student Data</h3>
+                            <p class="mb-0" style="color: black;">Click on the below button to show existing student's record.</br><font color="red"><b>Note:</b></font>Here, you can only see Record of Students existing in our database.</p>
+                            <a href="/teacher/home/show_student_data/home.html" target="_blank" class="text-decoration-none"><button class="custom-btn btn-1">Show Data</button></a>
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="service-box text-center color2">
+                            <center>
+                                <i class="updt"></i>
+                                <h3 class="mb-1 mt-0">Update Student Data</h3>
+                                <p class="mb-0">Click on the below button to update existing students record.</br><font color="red"><b>Note:</b></font>Here, you can only Update Data of Student</p>
+                                <a href="/teacher/home/update_student_data/home.html" target="_blank" class="text-decoration-none"><button class="custom-btn btn-1">Update Data</button></a>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box text-center color3">
+                           <center>
+                               <i class="dlt"></i>
+                                <h3 class="mb-1 mt-0">Delete Student Record</h3>
+                                <p class="mb-0">Click on the below button to delete students record.</br><font color="red"><b>Note:</b></font>Here, You can Delete Student's record</p>
+                                <a href="/teacher/home/delete_student_record/home.html" target="_blank" class="text-decoration-none"><button class="custom-btn btn-1">Delete Data</button></a>
+                           </center>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="service-box text-center color1">
+                            <center>
+                                <i class="srch"></i>
+                                <h3 class="mb-1 mt-0" style="color: black;">Search Student</h3>
+                                <p class="mb-0" style="color: black;">Click on the below button to search existing students record.</br><font color="red"><b>Note:</b></font>Here, Only you can Search for Student's Record</p>
+                                <a href="/teacher/home/search_student/home.html" target="_blank" class="text-decoration-none"><button class="custom-btn btn-1">Search Data</button></a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center><p class="footer text-center"></p></center>
+    </section>
+
+    <script>
+        window.onload = function() {
+            var preloader = document.getElementsByClassName('preloader')[0];
+            setTimeout(function() {
+                preloader.style.display = 'none';
+            }, 4000);
+        };
+
+    </script>
+</body>
+
+</html>

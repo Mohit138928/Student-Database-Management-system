@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+background-image: url('https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-50-shades-of-grey.png');
+background-repeat: no-repeat; 
+  background-attachment: flex;
+  background-size:cover;
+}

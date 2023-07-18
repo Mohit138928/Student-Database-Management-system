@@ -1,0 +1,306 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  background-image: url('https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-50-shades-of-grey.png');
+  background-repeat: no-repeat; 
+  background-attachment: flex;
+  background-size: cover; 
+}
+.card{
+ padding-top:30px;
+ border-radius:20px;
+ box-shadow: 0px 5px 20px 0px rgba(175, 175, 175, 0.5);;
+}
+
+h3{
+    font-size: 20px;
+  font-family: none;
+  font-weight: bold;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-1 {
+  background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-1 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-1:before,
+.btn-1:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgba(251,75,2,1);
+  box-shadow: -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-1:before{
+   height: 0%;
+   width: 2px;
+}
+.btn-1:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-1:hover{
+  color: rgba(251,75,2,1);
+  background: transparent;
+}
+.btn-1:hover:before {
+  height: 100%;
+}
+.btn-1:hover:after {
+  width: 100%;
+}
+.btn-1 span:before,
+.btn-1 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgba(251,75,2,1);
+  box-shadow: -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-1 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-1 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-1 span:hover:before {
+  height: 100%;
+}
+.btn-1 span:hover:after {
+  width: 100%;
+}
+.card:hover{
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+.user{
+content: url('https://api.iconify.design/carbon/user-avatar-filled.svg?width=80&height=80');
+}
+.account{
+  content: url('https://api.iconify.design/clarity/rupee-solid.svg?width=80&height=80');
+}
+.clsrm{
+  content: url('https://api.iconify.design/simple-icons/googleclassroom.svg?width=80&height=80');
+}
+.rslt{
+content: url('https://api.iconify.design/carbon/data-view-alt.svg?width=80&height=80');
+}
+/* Navbar Start */
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+.navbar {
+ width:100%;
+ font-family:sans-serif;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background-color: teal;
+ color: #fff;
+}
+.nav-links a {
+ color: #fff;
+}
+.Site-name {
+ font-size: 32px;
+}
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+ position: 10;
+}
+.menu li:hover {
+ background-color: #4c9e9e;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+
+.services {
+ position: relative; 
+}
+.dropdown {
+ background-color: rgb(1, 139, 139);
+ padding: 1em 0;
+ position: absolute; /*WITH RESPECT TO PARENT*/
+ display: none;
+ border-radius: 8px;
+ top: 35px;
+}
+.dropdown li + li {
+ margin-top: 10px;
+}
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 8em;
+ text-align: center;
+}
+.dropdown li:hover {
+ background-color: #4c9e9e;
+}
+.services:hover .dropdown {
+ display: block;
+}
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+ background-color: teal;
+ color: #fff;
+}
+.nav-links a {
+ color: #fff;
+}
+
+.logo{
+    position:absolute;
+    top:0;
+    left:0;
+    margin:18px;
+    padding: 0px 20px;
+}
+
+.Site-name {
+ font-size: 32px;
+ padding-left: 80px;
+}
+
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+.menu li:hover {
+ background-color: #113f3f;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+
+.opt {
+ position: relative; 
+}
+.dropdown {
+ background-color: rgb(1, 139, 139);
+ padding: 1em 0;
+ position: absolute; 
+ display: none;
+ border-radius: 8px;
+ top: 35px;
+ z-index:2;
+}
+.dropdown li + li {
+ margin-top: 10px;
+}
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 8em;
+ text-align: center;
+}
+.dropdown li:hover {
+ background-color: #113f3f;
+}
+.opt:hover .dropdown {
+ display: block;
+}
+input[type=checkbox]{
+ display: none;
+} 
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-color:teal;
+ right: 0;
+ left: 0;
+ height: 305px;
+ text-align: center;
+ padding: 16px 0;
+ z-index:2;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:#4c9e9e;
+ transition: 0.3s ease;
+}
+.menu li + li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+.dropdown {
+ left: 50%;
+ top: 30px;
+ transform: translateX(35%);
+}
+.dropdown li:hover {
+ background-color: #4c9e9e;
+}
+}

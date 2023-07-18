@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width">
+	<meta charset = "UTF-8">
+	<title>Register or Log in</title>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Login_signup/style.css">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div  class="signup">
+				<form>
+					<label class="Signup" for="chk" aria-hidden="true">Sign up</label>
+					<input class="form-style" type="text" name="Usrname" id="Usrname" placeholder="User name" required >
+					<input class="form-style" type="email" name="email" id="email" placeholder="Email" required >
+					<select type="Choose" name="student/teacher" class="mendform" id="mendform" placeholder="Student/teacher" required>
+                        <option value="-1">Are You:</option>
+						<option value="1">Student</option>
+                        <option value="2">Teacher</option>
+                    </select>
+					<input class="form-style" type="password" name="pswd" id="password" placeholder="Password" required="">
+					<button>Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form action=>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input class="form-style" type="text" name="usrname" id="usrname" placeholder="User name" required>
+					<input class="form-style" type="password" name="pswd" id="password" placeholder="Password" required>
+					<button>Login</button>
+					<center><a href="#" target="_blank">Forgot your password?</a></center>
+				</form>
+			</div>
+	</div>
+</body>
+</html>
